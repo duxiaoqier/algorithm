@@ -3,6 +3,9 @@ package com.duxiaoqier.algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * "<"符号表示删除，获取打印出来的字符串
+ */
 public class StringWithDelete {
     public static void main(String[] args) {
         String string = "<<sg<sngn<<";

@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class FishCategory {
+/**
+ * 此方法表示鱼动态加入的，和题意不是很相符
+ */
+public class FishCategoryDynamicInputOn2 {
+
     public static void main(String[] args) {
         //接受输入参数
         Scanner scanner = new Scanner(System.in);
@@ -31,8 +35,10 @@ public class FishCategory {
             }
             if (canSurvive) {
                 sum++;
+                fishSizeList.add(i);
             }
         }
+        System.out.println(fishSizeList);
         System.out.println(sum);
     }
 }

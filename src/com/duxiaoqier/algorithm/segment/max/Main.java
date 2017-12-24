@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * 过去最大线段长度
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -16,8 +19,6 @@ public class Main {
         segmentList.add(new Segment(8, 13));
 
         System.out.println(getMaxSegment(segmentList));
-        ;
-
     }
 
     private static int getMaxSegment(List<Segment> segmentList) {
