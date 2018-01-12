@@ -1,8 +1,6 @@
-package com.duxiaoqier.algorithm.bean;
+package com.duxiaoqier.algorithm.list;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class ListNode {

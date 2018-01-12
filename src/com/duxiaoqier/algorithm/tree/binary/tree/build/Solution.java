@@ -1,4 +1,4 @@
-package com.duxiaoqier.algorithm.build.binary.tree;
+package com.duxiaoqier.algorithm.tree.binary.tree.build;
 
 public class Solution {
 

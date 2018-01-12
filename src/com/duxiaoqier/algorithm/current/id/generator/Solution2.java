@@ -1,5 +1,6 @@
 package com.duxiaoqier.algorithm.current.id.generator;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
@@ -8,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class Solution2 {
     public static void main(String[] args) {
         final int threadNum = 50000;
-        final Map<String, AtomicInteger> count = new ConcurrentHashMap<>();
+        final Map<String, AtomicInteger> count = new HashMap<>();
         final CountDownLatch endLatch = new CountDownLatch(threadNum);
         Runnable task = () -> {
             AtomicInteger oldValue;

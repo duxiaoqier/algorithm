@@ -1,6 +1,6 @@
 package com.duxiaoqier.algorithm.list.merge;
 
-import com.duxiaoqier.algorithm.bean.ListNode;
+import com.duxiaoqier.algorithm.list.ListNode;
 
 public class Solution {
 
