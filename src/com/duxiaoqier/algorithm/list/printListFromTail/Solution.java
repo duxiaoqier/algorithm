@@ -1,4 +1,4 @@
-package com.duxiaoqier.algorithm.printListFromTail;
+package com.duxiaoqier.algorithm.list.printListFromTail;
 
 import java.util.ArrayList;
 
