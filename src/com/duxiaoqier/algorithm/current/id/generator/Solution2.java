@@ -8,12 +8,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Solution2 {
     public static void main(String[] args) {
-        final int threadNum = 50000;
-        final Map<String, AtomicInteger> count = new HashMap<>();
+        final int threadNum = 500000;
+        final Map<String, AtomicInteger> count = new ConcurrentHashMap<>();
         final CountDownLatch endLatch = new CountDownLatch(threadNum);
         Runnable task = () -> {
             AtomicInteger oldValue;
-            for (int i = 0; i < 5000; i++) {
+            for (int i = 0; i < 5; i++) {
                 oldValue = count.get("a");
                 if (null == oldValue) {
                     AtomicInteger zeroValue = new AtomicInteger(0);
