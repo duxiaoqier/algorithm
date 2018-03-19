@@ -8,15 +8,13 @@ package com.duxiaoqier.algorithm.current.signal.instance.dcl;
 public class DCL {
 
     private static volatile DCL instance;
-
-
     private int status;
 
     private DCL() {
         status = 1;                         //1
     }
 
-    public static DCL getInstance() {
+    private static DCL getInstance() {
         if (instance == null) {              //2
             synchronized (DCL.class) {       //3
                 if (instance == null) {      //4
@@ -28,6 +26,6 @@ public class DCL {
     }
 
     public int getStatus() {
-        return status;                      //7
+        return getInstance().status;                      //7
     }
 }
