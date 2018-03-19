@@ -7,8 +7,10 @@ public class TraditionalBlockingQueue<T> {
     private final int containerSize = 10;
     private Queue<T> container = new LinkedList<>();
 
+    private final Object lock = new Object();
+
     public void put(T element) throws InterruptedException {
-        synchronized (container){
+        synchronized (lock){
             while (container.size() == containerSize){
                 container.wait();
             }
@@ -18,7 +20,7 @@ public class TraditionalBlockingQueue<T> {
     }
 
     public T take() throws InterruptedException {
-        synchronized (container) {
+        synchronized (lock) {
             while (container.isEmpty()){
                 container.wait();
             }

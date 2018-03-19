@@ -11,7 +11,7 @@ public class Solution {
 
     public static void main(String[] args) throws InterruptedException {
         int num = 1000;
-        final CountDownLatch latch = new CountDownLatch(num-100);
+        final CountDownLatch latch = new CountDownLatch(num);
         final Solution solution = new Solution();
 
         for (int i = 0; i < num; i++) {
